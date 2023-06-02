@@ -4,12 +4,14 @@ import mongoose from 'mongoose'
 import routes from './Routes/firstRoutes.js'
 // Database and data
 import db from './DB/connection.js'
+import cors from 'cors'
 
 // import {submissionsData} from '../mememaker_backend/DB/newfirstseed.js'
 // import {createMemesJSON} from './DB/newfirstseed.js'
 
 
 const app = express()
+app.use(cors())
 const port = 2000
 //comment 
 //2nd comment
