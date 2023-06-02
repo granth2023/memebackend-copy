@@ -1,7 +1,7 @@
 
 import express from 'express'
 import mongoose from 'mongoose'
-import routes from './Routes/firstRoutes.js'
+import routes from '../api/Routes/firstRoutes.js'
 // Database and data
 import db from './DB/connection.js'
 import cors from 'cors'
@@ -40,9 +40,9 @@ app.use(express.json());
 // Routes
 app.use('/api', routes);
 
-// app.listen(port, () => {
-//     console.log(`Server is listening on port ${port}`);
-//   });
+app.listen(port, () => {
+    console.log(`Server is listening on port ${port}`);
+  });
 
 
 export default app 
