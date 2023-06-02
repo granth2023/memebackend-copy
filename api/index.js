@@ -36,7 +36,7 @@ const port = 2000
 app.use(express.json());
 
 // Routes
-app.use('/', routes);
+app.use('/api', routes);
 
 // app.listen(port, () => {
 //     console.log(`Server is listening on port ${port}`);
