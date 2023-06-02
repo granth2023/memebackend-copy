@@ -38,9 +38,9 @@ app.use(express.json());
 // Routes
 app.use('/', routes);
 
-app.listen(port, () => {
-    console.log(`Server is listening on port ${port}`);
-  });
+// app.listen(port, () => {
+//     console.log(`Server is listening on port ${port}`);
+//   });
 
 
-// export default app 
+export default app 
