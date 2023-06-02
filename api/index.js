@@ -8,10 +8,10 @@ import cors from 'cors'
 
 // import {submissionsData} from '../mememaker_backend/DB/newfirstseed.js'
 // import {createMemesJSON} from './DB/newfirstseed.js'
-app.use(cors())
+
 
 const app = express()
-
+app.use(cors())
 const port = 2000
 //comment 
 //2nd comment
