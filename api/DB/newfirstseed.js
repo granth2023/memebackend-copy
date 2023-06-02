@@ -1,7 +1,3 @@
-
-
-
-
 import axios from 'axios';
 // import { writeFile } from 'fs/promises';
 import path from 'path';
