@@ -1,7 +1,7 @@
 
 import express from 'express'
 import mongoose from 'mongoose'
-import routes from '../mememaker_backend/Routes/firstRoutes.js'
+import routes from './Routes/firstRoutes.js'
 const app = express()
 const port = 2000
 
@@ -10,11 +10,11 @@ const port = 2000
 
   
 
-import {createMemesJSON} from '/Users/gsh/code/unit2/project2/mememaker_backend/DB/newfirstseed.js'
+import {createMemesJSON} from './DB/newfirstseed.js'
 // import {submissionsData} from '../mememaker_backend/DB/newfirstseed.js'
 
 // Database and data
-import db from '../mememaker_backend/DB/connection.js'
+import db from './DB/connection.js'
 //import datas from '../mememaker_backend/Data/datas.json' assert {type: 'json'}
 
 

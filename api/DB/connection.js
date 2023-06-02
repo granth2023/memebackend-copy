@@ -6,6 +6,7 @@ dotenv.config()
 
 // Env variables
 const DATABASE_URI = process.env.DATABASE_URI
+console.log(DATABASE_URI)
 // const ENVIRONMENT = process.argv[2] || process.env.ENVIRONMENT
 const COLLECTION = process.env.COLLECTION ? process.env.COLLECTION : 'test'
 
