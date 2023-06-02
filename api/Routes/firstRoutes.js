@@ -5,7 +5,7 @@ import { getMemes, getMemesById, createMeme, updateMemeByID, deleteMeme, getSubm
 const router = express.Router();
 //need get route for second model submissions-- 
 //get submissions for specific meme, so based off meme reference, /memes/:memeID/submission  
-router.get('/api/memes', getMemes);
+router.get('/memes', getMemes);
 router.get('/memes/:id', getMemesById);
 router.get('/submissions', getSubmissions);
 router.get('/submissions/:id', getSubmissionById);
