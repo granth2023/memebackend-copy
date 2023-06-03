@@ -6,9 +6,11 @@ const submissionSchema = new mongoose.Schema({
         ref: 'Meme',
         required: false
       },
-    "dataCreated": "string",
-    "bottomText": "string",
-    "topText": "string"
+    dataCreated: string,
+    bottomText: string,
+    topText: string,
+    topTextPosition: topTextPosition,
+    bottomTextPosition: bottomTextPosition
   })
 
 const Submission = mongoose.model('Submission', submissionSchema);
