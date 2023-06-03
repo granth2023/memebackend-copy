@@ -3,7 +3,7 @@ import axios from 'axios';
 import path from 'path';
 import Meme from '../Models/user.model.js';
 import Submission from '../Models/another.model.js';
-import db from './connection.js'
+//import db from './connection.js'
 
 
 // const __dirname = path.resolve(path.dirname(''));
