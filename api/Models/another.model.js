@@ -9,9 +9,9 @@ const submissionSchema = new mongoose.Schema({
   dataCreated: String,
   bottomText: String,
   topText: String,
-  topTextPosition: Object,
-  bottomTextPosition: Object,
-  topTextStyles: Object,
+  topTextPosition: String,
+  bottomTextPosition: String,
+  topTextStyles: String,
   bottomTextStyles: Object
 });
 const Submission = mongoose.model('Submission', submissionSchema);

@@ -64,6 +64,7 @@ const createMeme = async (req, res) => {
 //this is create submission through backend, but how do i get it to respond to front end form fills? Do I need to worry about that? //front end needs to reference deployed backend and you need to do fetches on backend and once you get the response you get the data. 
   const createSubmission = async (req, res) => {
     try {
+      console.log(req.body)
       const submission = await Submission.create(req.body);
       res.status(201).json(submission);
     } catch (error) {
