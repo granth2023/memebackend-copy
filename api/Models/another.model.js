@@ -6,7 +6,7 @@ const submissionSchema = new mongoose.Schema({
     ref: 'Meme',
     required: false
   },
-  dataCreated: String,
+  dateCreated: String,
   bottomText: String,
   topText: String,
   topTextPosition: String,
