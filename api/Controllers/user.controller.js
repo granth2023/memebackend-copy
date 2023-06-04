@@ -85,9 +85,6 @@ const createMeme = async (req, res) => {
   };
   const updateSubmission = async (req, res) => {
     try {
-      console.log('Request ID:', req.params.id);
-      console.log('Updated Submission Data:', req.body);
-  
       const updatedSubmission = await Submission.findByIdAndUpdate(
         req.params.id,
         req.body,
@@ -98,15 +95,11 @@ const createMeme = async (req, res) => {
         return res.status(404).json({ error: 'Submission not found' });
       }
   
-      console.log('Updated Submission:', updatedSubmission);
-  
       res.status(200).json(updatedSubmission);
     } catch (error) {
-      console.error('Error updating submission:', error);
       res.status(500).json({ error: 'Server error' });
     }
   };
-  
 
 
   const deleteMeme = async (req, res) => {
